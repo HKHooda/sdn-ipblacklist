@@ -31,6 +31,8 @@ Commands to run the project
 8. Use the following commands for GET, POST and DELETE
 
    To view IP Blacklist content: curl -s http://localhost:8080/wm/ipblacklist/ipblacklist/json | python -mjson.tool
+   
    To add an IP into blacklist: curl -X POST -d '{"ip":"10.0.2.15"}' http://localhost:8080/wm/ipblacklist/ipblacklist/json
+   
    To delete an IP from blacklist: curl -X DELETE -d '{"ip":"10.0.2.16"}' http://localhost:8080/wm/ipblacklist/ipblacklist/json
 
